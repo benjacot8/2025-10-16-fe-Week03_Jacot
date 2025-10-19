@@ -1,0 +1,228 @@
+<!-- Parameters -->
+<!--At least 2 pages -->
+<!--A Bootstrap navbar, table, and form. -->
+<!-- Bootstrap grid used throughout to format elements-->
+<!-- Elements should stack vertically when the window is small-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ben Jacot">
+    <title>Ben's Workout Website</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Workouts</a>
+
+        <!-- Collapsible content -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">Push-Ups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Pull-Ups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Crunches</a>
+                </li>
+
+            </ul>
+
+            <!-- Search bar & button-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <!-- END NAVBAR -->
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Title for the website -->
+    <h1 class="text-center">Ben's Workout Website</h1>
+
+    <!-- Introductory photo of weights -->
+    <img class="img-fluid-center" style="display: block; margin: auto; width: 50%;" src="pages/weights.jpg"
+        alt="Ben's Workout Website"> <br>
+
+    <!-- Introducing user to the website -->
+    <p class="text-center">Hello world! </p> <br>
+    <p class="text-center">This is a website containing 3 exercises
+        for developing upper body strength.</p> <br>
+    <p class="text-center">Click on the links below to learn more about each exercise:</p>
+    <br><br>
+
+
+
+    <!--CARDS-->
+    <div class="container">
+        <div class="row">
+
+
+            <!--Card for push-ups-->
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="pages/push_ups.jpg" class="card-img-top" alt="Push-Ups">
+                    <div class="card-body">
+                        <h5 class="card-title">Push-Ups</h5>
+                        <p class="card-text">Workout plan for push-ups</p>
+                        <a href="page1.html" class="btn btn-primary">Go to push-ups</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Card for pull-ups-->
+    <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img src="pages/pull_ups.jpg" class="card-img-top" alt="Pull-Ups">
+            <div class="card-body">
+                <h5 class="card-title">Pull-Ups</h5>
+                <p class="card-text">Workout plan for pull-ups</p>
+                <a href="page2.html" class="btn btn-primary">Go to pull-ups</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!--Card for crunches-->
+    <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img src="pages/crunches.jpg" class="card-img-top" alt="Crunches">
+            <div class="card-body">
+                <h5 class="card-title">Crunches</h5>
+                <p class="card-text">Workout plan for crunches</p>
+                <a href="page3.html" class="btn btn-primary">Go to crunches</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <!--Card for exercise message-->
+
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">The Importance of Exercise</h5>
+            <p class="card-text">Regular exercise is crucial for maintaining a healthy lifestyle. It helps to improve
+                cardiovascular health, build muscle strength, and enhance flexibility.</p>
+            <p class="card-text">Exercising is also important for <strong>maintaining physical health</strong>,
+                improving mental well-being, and
+                enhancing overall quality of life.</p>
+        </div>
+    </div>
+    <br><br>
+
+
+    <!--Card for unordered list of additional exercises-->
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">Additional Exercises</h5>
+            <p class="card-text">In addition to push-ups, pull-ups, and crunches, there are many other exercises that
+                can help you stay fit and healthy. Here are some examples:</p>
+            <p>Squats</p>
+            <p>Lunges</p>
+            <p>Planks</p>
+            <p>Mountain Climbers</p>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Card for contact information FORM-->
+    <div class="card text-center">
+        <div class="card-body">
+            <!--Card for contact information FORM-->
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Contact Information</h5>
+                    <p class="card-text">If you have any questions or feedback, feel free to reach out!</p>
+
+                    <!--Bootstrap form for first & last name-->
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--Section for email-->
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--Section for message-->
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Card for Quick Poll-->
+    <div class="card text-center">
+        <div class="card-body">
+            <h3 class="card-title">Quick Poll:</h3>
+            <p class="card-text">Which exercise do you find most challenging?</p>
+            <form class="text-center">
+                Choices: <br>
+                <input type="radio" name="workout" value="push-ups"> Push-Ups <br>
+                <input type="radio" name="workout" value="pull-ups"> Pull-Ups <br>
+                <input type="radio" name="workout" value="crunches"> Crunches <br><br>
+                <input type="submit" value="Vote">
+            </form>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
